@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pragnesh's Resume</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+
+</script>
+
+
+<style>
+
+ body{
+font: 400 15px ;
+    line-height: 1.8;
+}
+
+.jumbotron{
+
+	
+	background-image:url("bgimg.jpg");
+	
+
+   text-align:left;
+    color: #fff;
+    background-attachment: fixed;
+  
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.skill{
+margin-left:50px;
+font-weight:1.5;
+}	
+
+.bg-grey{
+	background-color:#f6f6f6;
+}
+.container-fluid{
+	padding:60px 50px;
+}
+
+
+@media screen and (max-width: 768px){
+	.col-sm-4{
+		text-align:center;
+		margin:25px 0;
+	}
+}
+
+/*body {
+  font-family: 'Ubuntu', sans-serif;
+  width:960px;
+}*/
+
+
+p{
+ 
+  font-size: 14px;
+    line-height: 1.75;
+}
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #{{ site.color.primary }};
+}
+
+p.large {
+    font-size: 16px;
+}
+h2{
+	font-weight:10;
+}
+
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:5px;
+	width:50%;
+	background:none;
+	height:25px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:-1px;
+	left:0;
+	width:0px;
+	margin-left: 50px;
+
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background: #6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0);
+	/*padding:0 20px;*/
+	padding:absolute;
+	height:25px;
+	top:1.5px;
+	left:10px;
+	font-size:15px;
+	/*line-height:35px;*/
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:25px;
+	width:0px;
+	margin-left: 50px;
+	background:#6adcfa;
+	border-radius:3px;
+	color:#ffffff;
+	text-align: right;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar.percent {
+	position:absolute;
+	text-align: right;
+  	padding-top: 1px;
+	padding-right: 6px;
+	top:0px;
+	font-size:15px;
+	
+	font-weight:light;
+
+
+	color:rgb(255, 255, 255);
+}
+
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 3px;
+    margin-left: -1.5px;
+    background-color: #e0e0e0;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    border: 3px solid #000000;
+    border-radius: 100%;
+    text-align: center;
+    color: #000;
+    background-color: #ffffff;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 500;
+    text-align: inherit;
+    text-transform: none;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+    height: 0;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+    text-transform: none;
+    font-weight: bolder;
+    line-height: 25px;
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+    font-weight: lighter;
+}
+
+.timeline .timeline-body>p {
+     margin-bottom: 0;
+     font-weight: lighter;
+     font-size: 16px;
+     line-height: 25px;
+}
+
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        margin-bottom: 100px;
+        min-height: 100px;
+        margin-top: 25px;
+    }
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 20px;
+        font-size: 13px;
+        line-height: 18px;
+        text-transform: none;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+@media(min-width:992px) {
+    .timeline>li {
+        min-height: 150px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: none;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .timeline>li {
+        min-height: 170px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 50px;
+        font-size: 22px;
+        font-weight: lighter;
+        text-transform: none;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #222;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #f4511e !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+
+footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 1px;
+   	padding:30px 50px;
+    color: #f4511e;
+}
+  
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+.btn {
+	background-color:#FF6347;
+	color:#ffffff;
+	margin: 15px 0;
+}
+
+
+.box{
+
+    width: 500px;
+    border-style:none;
+    padding: 20px;
+    margin: 20px;
+color:#FFFFFF;
+
+
+}
+.progress-bar{
+background-color:#222;
+font-size:15px;
+font-weight:bold;
+
+top:1.5px;
+}
+.progress{
+	width:350px;
+height:25px;
+
+}
+.intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Open Sans", "Open Sans","Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: none;
+    font-family: "Open Sans", "Open Sans",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+
+
+
+</style>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="about" class="jumbotron">
+	<div class="container">
+<div class="intro-text">
+			<div class="intro-lead-in">Pragnesh Amin</div>
+				<div class="intro-heading">My name is Pragnesh Amin.</br>
+							I am software developer and </br>
+ passionate hobbyist of Embedded</br> System.
+I am working in the field of</br> Advanced Driver Assistance System</br> (ADAS),
+Infrastructure software.</br> My work includes developing </br>intelligent 
+software solutions. I quickly</br> adapt new technologies and start </br>working 
+on them. I like coding, </br>cooking, playing cricket and riding bike.
+				</div>
+	</div>	
+	</div>
+	
+</div>
+
+<!-- Work experience section -->
+<div id="resume" class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                   <h1 class="section-heading">RESUME</h1></br>
+                    <h2 class="section-subheading">WORK EXPERIENCE</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <h4>Sep 2015  <br> -March 2016</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Stereo Vision Camera for Jaguar and Land Rover</h4>
+                                    <h4 class="subheading">Robert Bosch,Bangalore</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Customer Requirement analysis and Implementation.
+Involved in Car configuration module requirement analysis, Design, Coding in C++,Testing developed requirement.
+</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Apr 2015<br>-Sep 2015</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Mono Vision Camera for valkswagen</h4>
+                                    <h4 class="subheading">Robert Bosch,Bangalore</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Customer Requirement analysis and Implementation.
+Involved in Design, Coding in C++, Testing on Hardware.
+Working with Germany Bosch for 3 Months in Leonberg.
+                               <!--<a class="btn btn-xl" style="margin-top:20px; background-color:#222; padding: 10px 15px; border-radius: 3px; font-size:15px" type='submit' href="/downloads/thesis.pdf" download="thesis.pdf">Report</a>
+                                    <a class="btn btn-xl" style="margin-top:20px; background-color:#222; padding: 10px 15px; border-radius: 3px; font-size:15px" type='submit' href="/downloads/thesis_presentation.pptx" download="thesis_presentation.pptx">Presentation</a>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="timeline-image">
+                                <h4>Oct 2012<br>-March 2013</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>IR Sensor based wireless remote controller for weft filler</h4>
+                                    <h4 class="subheading">Scarlet Enterprises, Pune</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Code development for the generic driver like LCD, Keypad, UART.
+				Also testing developed software.
+ </br>
+                                <!--  <a class="btn btn-xl" style="margin-top:20px; background-color:#222; padding: 10px 15px; border-radius: 3px; font-size:15px" type='submit' href="/downloads/research_report_part1.pdf" download="research_report_part1.pdf">Report Part-1</a>
+                                  <a class="btn btn-xl" style="margin-top:20px; background-color:#222; padding: 10px 15px; border-radius: 3px; font-size:15px" type='submit' href="/downloads/research_report_part2.pdf" download="research_report_part2.pdf">Report Part-2</a>
+                                  --> </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>May 2012<br>-Sep 2012</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Solar Panel Tracker</h4>
+                                    <h4 class="subheading">Scarlet Enterprises, Pune</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Customer requirement analysis and coding in c.
+As per the sun light solar panel will move.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <h4>Dec 2010<br>-May 2011</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Air condition Controller</h4>
+                                    <h4 class="subheading">Indotech Industrial Solution Pvt Ltd,Pune</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Code development for the generic driver like LCD, Keypad, UART, Temperature Control, Alarm Provision through relays.</p>
+                                </div>
+                            </div>
+                        </li>
+ 					 
+                    </ul>
+                </div>
+            </div>
+
+</div>
+<!--Education Section-->
+<div class="container-fluid bg-grey">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-subheading">EDUCATION</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="timeline">
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>June 2006<br>-May 2009</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>BE in Electronics and TeleCommunication Engineering </h4>
+                                    <h4 class="subheading">RSCOE,Pune</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Courses:Courses: Analog and Digital Circuit + Lab, Analog and Digital Communication + Lab, Control Systems, Radar and Microwave, Digital Signal Processing + Lab, Microcontrollers/Microprocessors + Lab, Image Processing, Real Time Systems, Embedded Systems. Grade: 1st Class.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <h4>June 2003<br>-May 2006</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Diploma in Industrial Electronics</h4>
+                                    <h4 class="subheading">Bharti Vidhyapeeth,Pune</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Courses:Grade: 1st Class.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+</div>
+
+<!--Skill Section-->
+<div class="container-fluid">
+ <div class="row">
+<div class="col-md-12 text-center">
+	<h2>SKILLS </h2>
+</div>
+
+
+<div class="col-md-4">
+	<h4 class="text-muted skill">Programming Language</h4>
+
+		<div class="skillbar clearfix " data-percent="120%">
+		<div class="skillbar-title" ><span>C</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;">60%</div>
+		
+		</div> <!-- End Skill Bar -->
+
+		<div class="skillbar clearfix " data-percent="100%">
+		<div class="skillbar-title" ><span>C++</span></div>
+		<div class="skillbar-bar percent" style="background:   #222;">50%</div>
+		
+		</div> <!-- End Skill Bar -->
+
+		<div class="skillbar clearfix " data-percent="60%">
+		<div class="skillbar-title" ><span>Paython</span></div>
+		<div class="skillbar-bar percent" style="background: #222;">30%</div>
+		
+		</div> <!-- End Skill Bar -->
+
+		
+
+	<h4 class="text-muted skill">IDE</h4>
+		
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>Visual Studio C++</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;">70%</div>
+		
+		</div> 
+
+		
+		
+		<div class="skillbar clearfix " data-percent="130%">
+		<div class="skillbar-title" ><span>MPLAB IDE</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;">65%</div>
+		
+		</div> 
+			
+		<div class="skillbar clearfix " data-percent="130%">
+		<div class="skillbar-title" ><span>UML(Architecture)</span></div>
+		<div class="skillbar-bar percent" style="background: #222;">65%</div>
+		
+		</div> 
+
+	</div>
+
+<!-- 2nd column-->
+
+	<div class="col-md-4">
+	<h4 class="text-muted skill">Microcontroller</h4>
+		
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-bar percent" style="background: #222;"></div>
+		<div class="skillbar-title" ><span>8051</span></div>
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>PIC18xx</span></div>
+		<div class="skillbar-bar percent" style="background: #222;"></div>
+		
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>ARM7</span></div>
+		<div class="skillbar-bar percent" style="background: #222;"></div>
+		
+		</div> 
+
+	<h4 class="text-muted skill">Other Tools</h4>
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title"><span>TRACE32</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+		
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>Vector CANOE</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+	
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>MKS Integrity</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+		
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title"  ><span>DOORS</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+	
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" "><span>ClearQuest</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+		
+		</div> 
+	</div>
+
+<!--3rd column-->
+
+	<div class="col-md-4">
+	<h4 class="text-muted skill">Protocol</h4>
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>RS232</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+		
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title"><span>SPI</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+		
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>I2C</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+	
+		</div> 
+
+		<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>CAN</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+		
+		</div> 
+	</div>
+</div>
+
+		
+<!--End Skill Bar -->
+
+	
+ 
+</div>
+</div> 
+
+</div>
+
+ <!-- skills title -->
+<div class="container-fluid bg-grey">
+           <div class="row">
+                  <div class="col-lg-12 text-center">     
+	<h2 class="section-subheading">LANGUAGE</h2></div></br>
+   <div class="col-md-4"></div>
+              <div class="col-md-4">
+
+		<h4 class="text-muted skill">Mother Tonuge</h4>
+			<div class="skillbar clearfix " data-percent="140%">
+		<div class="skillbar-title" ><span>Gujarati</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;">(Native)</div>
+		
+		</div> 
+
+<h4 class="text-muted skill">2nd Language</h4>
+		<div class="skillbar clearfix " data-percent="120%">
+		<div class="skillbar-title"><span>English</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;">(Bilingual)</div>
+		
+		</div> 
+
+<h4 class="text-muted skill">3rd Language</h4>
+		<div class="skillbar clearfix " data-percent="100%">
+		<div class="skillbar-title" ><span>Marathi</span></div>
+		<div class="skillbar-bar percent" style="background:  #222;"></div>
+	  </div> <!-- End column -->
+                <div class="col-md-4"></div>
+</div>
+</div>	
+</br></br></br>
+<div class="text-center">
+          <a class="btn" type='submit' href="/downloads/resume.pdf" download="resume.pdf">Download CV</a></div>
+      
+</div>
+
+
+<!--Contact Section-->
+
+<div id="contact" class="container-fluid-grey text-center">
+
+</br></br></br>
+	<h2>CONTACT</h2>
+	
+	<p><span class="glyphicon glyphicon-map-marker"></span>13th Main,2nd Cross, AICOBOO Nagar,</br>BTM Layout Stage-1,Bangalore</p>
+	<p><span class="glyphicon glyphicon-phone"></span>+91 8050359818</p>
+	<p><span class="glyphicon glyphicon-envelope"></span>&nbsp;aminpragnesh3@gmail.com </p>
+<p><span class="glyphicon glyphicon-envelope"></span>&nbsp;aminpragnesh3@yahoo.co.in</p>
+</br></br>
+</div>
+
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter= new google.maps.LatLng(12.917686,77.608823);
+
+function initialize() {
+var mapProp= {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window,'load',initialize);
+</script>
+
+
+<footer class="text-center">
+  <a href="#myPage" title="To Top">
+   <i class="fa fa-arrow-circle-up" style="font-size:48px;color:#f4511e"></i>
+  </a>
+  <p><span class="copyright">Copyright &copy;Website 2016</span>
+</p>   
+
+</footer>
+ 
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
